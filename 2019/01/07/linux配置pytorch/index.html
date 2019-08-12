@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="toprocker">
 <meta property="og:description" content="Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1本博客所有所需文件百度云链接(提取码：nl85) 一.安装双系统（win10+ubuntu16.04)1.在win10下载Rufus(启动盘制作工具)官网下载、csdn下载2.下载Ubuntu16.04镜像官网下载、中科大源、阿里云源、兰州大学源、浙江大学源3.用Rufus制作好启动盘，进入BIO">
 <meta property="og:locale" content="ch">
-<meta property="og:updated_time" content="2019-08-12T04:11:05.732Z">
+<meta property="og:updated_time" content="2019-08-12T06:39:19.280Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux配置pytorch">
 <meta name="twitter:description" content="Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1本博客所有所需文件百度云链接(提取码：nl85) 一.安装双系统（win10+ubuntu16.04)1.在win10下载Rufus(启动盘制作工具)官网下载、csdn下载2.下载Ubuntu16.04镜像官网下载、中科大源、阿里云源、兰州大学源、浙江大学源3.用Rufus制作好启动盘，进入BIO">
@@ -49,6 +49,9 @@
 
 
   
+    <script src="/assets/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+  
 
 </head>
 
@@ -56,7 +59,7 @@
   <div id="container" q-class="show:isCtnShow">
     
     <!-- GitHub Ribbons -->
-    <a class="forkme" style="position:fixed;z-index:999;top:0;right:0.5em" href="https://github.com/JoeyBling/hexo-theme-yilia-plus"
+    <a class="forkme" style="position:fixed;z-index:999;top:0;right:0.5em" href="https://github.com/toprocker"
       target="_blank"><img width="149" height="149" src="/img/forkme.png"
         class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     
@@ -250,19 +253,28 @@
 <p>  -no-opengl-files 意思是不安装opengl，如果安装的话可能会导致循环登陆！<br>  重启</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ reboot</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><figcaption><span>nvidia-smi</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">如果出现一个表格，则安装完成</span><br><span class="line">## 四.安装python3.6并设为默认([参考来源](https://www.jianshu.com/p/2a5cd519e583))</span><br><span class="line">-   ```$ add-apt-repository ppa:jonathonf/python-3.6```添加ppa到系统</span><br><span class="line">  ```$ apt-get update```更新</span><br><span class="line">  ```$  sudo apt-get install python3.6-dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvidia-smi</span><br></pre></td></tr></table></figure>
 
-  <figure class="highlight plain"><figcaption><span>sudo apt-get install python3.6-gdbm```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">  ```ls -l /usr/bin | grep python```查看python命令指向：</span><br><span class="line">  ```rm /usr/bin/python```删除原有python软连接</span><br><span class="line">  ```ln -s /usr/bin/python3.6 /usr/bin/python```建立python到python3.6新的软链接</span><br><span class="line">  ```apt-get install python3-pip```安装python3版本pip</span><br><span class="line">  ```ln -s /usr/bin/pip3 /usr/bin/pip```建立pip到pip3的软连接。</span><br><span class="line">## 五.安装cuda9.2.148_396.37_linux</span><br><span class="line">- 去Cuda官网下载Cuda9.2</span><br><span class="line">  ```$ sudo sh cuda9.2.148_396.37_linux.run```注意：提示安装驱动时选否</span><br><span class="line">  ```$ sudo gedit /etc/profile</span><br></pre></td></tr></table></figure>
+<p>如果出现一个表格，则安装完成</p>
+<h2 id="四-安装python3-6并设为默认-参考来源"><a href="#四-安装python3-6并设为默认-参考来源" class="headerlink" title="四.安装python3.6并设为默认(参考来源)"></a>四.安装python3.6并设为默认(<a href="https://www.jianshu.com/p/2a5cd519e583" target="_blank" rel="noopener">参考来源</a>)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ add-apt-repository ppa:jonathonf/python-3.6#添加ppa到系统</span><br><span class="line">$ apt-get update#更新</span><br><span class="line">$  sudo apt-get install python3.6-dev</span><br><span class="line">$  sudo apt-get install python3.6-gdbm</span><br><span class="line">ls -l /usr/bin | grep python#查看python命令指向：</span><br><span class="line">rm /usr/bin/python#删除原有python软连接</span><br><span class="line">ln -s /usr/bin/python3.6 /usr/bin/python#建立python到python3.6新的软链接</span><br><span class="line">apt-get install python3-pip#安装python3版本pip</span><br><span class="line">ln -s /usr/bin/pip3 /usr/bin/pip#建立pip到pip3的软连接。</span><br></pre></td></tr></table></figure>
+
+<h2 id="五-安装cuda9-2-148-396-37-linux"><a href="#五-安装cuda9-2-148-396-37-linux" class="headerlink" title="五.安装cuda9.2.148_396.37_linux"></a>五.安装cuda9.2.148_396.37_linux</h2><p>-去Cuda官网下载Cuda9.2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo sh cuda9.2.148_396.37_linux.run</span><br></pre></td></tr></table></figure>
+
+<p>  注意：提示安装驱动时选否</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo gedit /etc/profile</span><br></pre></td></tr></table></figure>
 
 <p>  添加如下内容：</p>
-<blockquote>
-<p>export PATH=/usr/local/cuda-9.2/bin:$PATH<br>      export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64$LD_LIBRARY_PATH</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH=/usr/local/cuda-9.2/bin:$PATH</span><br><span class="line">export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64\$LD_LIBRARY_PATH</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>保存，重启<figure class="highlight plain"><figcaption><span>cd</span><a href="/usr/local/cuda-9.2/samples/1_Utilities/deviceQuery```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```$ sudo make</span><br></pre></td></tr></table></figure>
+<li>保存，重启<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd /usr/local/cuda-9.2/samples/1_Utilities/deviceQuery</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</blockquote>
-  <figure class="highlight plain"><figcaption><span>./deviceQuery ```结果如果是 result </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  -注： 若要卸载重装</span><br><span class="line">  &gt;$ cd /usr/local/cuda/bin</span><br><span class="line">  		$ sudo ./uninstall_cuda_9.2.pl</span><br><span class="line">## 六.安装Cudnn7.2.1.38</span><br><span class="line">- ```sudo tar -zxvf ./cudnn-9.2-linux-x64-v7.2.1.38.tgz```也可以手动右键解压（提取）</span><br><span class="line">  ```cd cuda/include</span><br></pre></td></tr></table></figure>
+<p>$ sudo make<br>$ ./deviceQuery<br>​<figure class="highlight plain"><figcaption><span>result </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-注： 若要卸载重装</span><br></pre></td></tr></table></figure></p>
+<p>$ cd /usr/local/cuda/bin<br>$ sudo ./uninstall_cuda_9.2.pl</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## 六.安装Cudnn7.2.1.38</span><br><span class="line">- ```sudo tar -zxvf ./cudnn-9.2-linux-x64-v7.2.1.38.tgz```也可以手动右键解压（提取）</span><br><span class="line">  ```cd cuda/include</span><br></pre></td></tr></table></figure>
 
   <figure class="highlight plain"><figcaption><span>cp cudnn.h</span><a href="/usr/local/cuda/include```复制头文件">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```cd ..</span><br></pre></td></tr></table></figure>
 
@@ -279,6 +291,7 @@
 <h2 id="八-安装Pycharm"><a href="#八-安装Pycharm" class="headerlink" title="八.安装Pycharm"></a>八.安装Pycharm</h2><ul>
 <li><a href="http://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">官网下载</a><br>下载LInux 社区版（Community）<br><a href="https://blog.csdn.net/zhuanshu666/article/details/73554885" target="_blank" rel="noopener">安装方法</a></li>
 </ul>
+<p>```</p>
 
     
 
@@ -303,7 +316,7 @@
                   
                   
                   <div class="reward-box-item">
-                    <img class="reward-img" src="/img/weichat0.jpg">
+                    <img class="reward-img" src="/img/wechat0.jpg">
                     <span class="reward-type">微信</span>
                   </div>
                   
@@ -441,6 +454,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu16-04-Python3-6-Cuda9-2-Cudnn7-2-Pytorch0-4-1"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-安装双系统（win10-ubuntu16-04"><span class="toc-number">1.1.</span> <span class="toc-text">一.安装双系统（win10+ubuntu16.04)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Ubuntu-更改下载源为国内源"><span class="toc-number">1.2.</span> <span class="toc-text">二.Ubuntu 更改下载源为国内源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-安装NVIDIA驱动"><span class="toc-number">1.3.</span> <span class="toc-text">三.安装NVIDIA驱动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-安装python3-6并设为默认-参考来源"><span class="toc-number">1.4.</span> <span class="toc-text">四.安装python3.6并设为默认(参考来源)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-安装cuda9-2-148-396-37-linux"><span class="toc-number">1.5.</span> <span class="toc-text">五.安装cuda9.2.148_396.37_linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七-安装Pytorch0-4-1"><span class="toc-number">1.6.</span> <span class="toc-text">七.安装Pytorch0.4.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八-安装Pycharm"><span class="toc-number">1.7.</span> <span class="toc-text">八.安装Pycharm</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -467,7 +493,7 @@
     		&copy; 2018-2019 toprocker
     	</div>
       	<div class="footer-right">
-      		GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a> by Litten
+      		GitHub:<a href="https://github.com/toprocker" target="_blank">hexo-theme-yilia-plus</a> by Litten
       	</div>
     </div>
   </div>
@@ -497,11 +523,11 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: true,
+		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -509,23 +535,6 @@
 
 
 <!--  -->
-
-<script>
-  /* 标签页标题切换 */
-  var originTitle = document.title;
-  var titleTime;
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-      clearTimeout(titleTime);
-    } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-      titleTime = setTimeout(function () {
-        document.title = originTitle;
-      }, 2000);
-    }
-  });
-</script>
 
 
     
@@ -584,11 +593,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">恶搞</a>
+                <a href="javascript:void(0)" class="js-tag color3">DL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">DL</a>
+                <a href="javascript:void(0)" class="js-tag color3">恶搞</a>
               </li>
             
             <div class="clearfix"></div>
