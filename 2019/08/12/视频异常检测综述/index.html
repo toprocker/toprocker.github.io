@@ -15,18 +15,21 @@
 
 
 
-<meta name="description" content="图像处理，最开始描述子用来表示特征，局部特征脑科学、认知学、心理学图像中：一条直线、一个圆；梯度不变，梯度均匀变化">
-<meta name="keywords" content="组会笔记">
+<meta name="description" content="#基于深度学习的无监督和半监督视频异常检测方法综述  摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。 ##关键词无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。 ##1绪论​    随着生">
+<meta name="keywords" content="DL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019.5.31梁老师组会笔记">
-<meta property="og:url" content="http://yoursite.com/2019/05/31/2019.5.31梁老师组会笔记/index.html">
+<meta property="og:title" content="视频异常检测（VAD）综述(译)">
+<meta property="og:url" content="http://yoursite.com/2019/08/12/视频异常检测综述/index.html">
 <meta property="og:site_name" content="toprocker">
-<meta property="og:description" content="图像处理，最开始描述子用来表示特征，局部特征脑科学、认知学、心理学图像中：一条直线、一个圆；梯度不变，梯度均匀变化">
+<meta property="og:description" content="#基于深度学习的无监督和半监督视频异常检测方法综述  摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。 ##关键词无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。 ##1绪论​    随着生">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-12T03:14:11.082Z">
+<meta property="og:image" content="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png">
+<meta property="og:image" content="https://i.loli.net/2019/07/11/5d26ad398ed3b27732.png">
+<meta property="og:updated_time" content="2019-08-12T09:21:44.538Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2019.5.31梁老师组会笔记">
-<meta name="twitter:description" content="图像处理，最开始描述子用来表示特征，局部特征脑科学、认知学、心理学图像中：一条直线、一个圆；梯度不变，梯度均匀变化">
+<meta name="twitter:title" content="视频异常检测（VAD）综述(译)">
+<meta name="twitter:description" content="#基于深度学习的无监督和半监督视频异常检测方法综述  摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。 ##关键词无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。 ##1绪论​    随着生">
+<meta name="twitter:image" content="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -58,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>2019.5.31梁老师组会笔记 | toprocker</title>
+<title>视频异常检测（VAD）综述(译) | toprocker</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -279,11 +282,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-2019.5.31梁老师组会笔记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-视频异常检测综述" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/05/31/2019.5.31梁老师组会笔记/" class="article-date">
-      <time datetime="2019-05-31T02:21:20.000Z" itemprop="datePublished">2019-05-31</time>
+      <a href="/2019/08/12/视频异常检测综述/" class="article-date">
+      <time datetime="2019-08-12T09:20:25.497Z" itemprop="datePublished">2019-08-12</time>
 </a>
 
 
@@ -298,7 +301,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      2019.5.31梁老师组会笔记
+      视频异常检测（VAD）综述(译)
     </h1>
   
 
@@ -309,7 +312,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/组会笔记/">组会笔记</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DL/">DL</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -319,10 +322,29 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>图像处理，最开始描述子用来表示特征，局部特征<br>脑科学、认知学、心理学<br>图像中：一条直线、一个圆；梯度不变，梯度均匀变化</p>
-<a id="more"></a>
-<p>人在认知图像特征的时候不是依靠全局特征，而是依靠局部特征<br>局部梯度变化的集合来表示这个点<br>每个点都统计局部特征，再来看它的分布 bag of words<br>深度学习本质上也是用深层的网络中提取这种bags of words<br>区别：以前是直接从图像中提取出特征，而神经网络是不断从特征图中提取特征<br>以前的方法之所以不太好，欲速则不达<br>实际中计算机如何实现求连续函数的梯度，不是简单的做差去平均，而是用一阶高斯函数卷积<br>高斯函数怎么来的，心理学，盯住一个东西，周围是模糊的，越远越模糊<br>训练之后神经网络中的卷积核就是0阶高斯、1阶高斯、2阶高斯等<br>离散空间中也有高斯核<br>17：47 周颖学姐<br>目标检测-&gt;半监督训练目标间的关系，j个关系训练j个决策树<br>生成模型 exp(AY)<br>决策树怎么跑无标签数据？怎么用无标签数据来提高模型的效果？ </p>
-<h2 id="用于神经网络置信度"><a href="#用于神经网络置信度" class="headerlink" title="用于神经网络置信度"></a>用于神经网络置信度</h2><p>训练数据外的数据被视为异常<br>18:32 王倩楠学姐<br>内存溢出问题，图像大小256，老师说可以把图缩小为128*128<br>18：44 谷老师<br>人与人交流时情感<br>表情、语气、姿势都能够表达情感<br>提取最有效的特征，比如说语音的大小<br>特征提取-》特征选择-》分类</p>
+        <p>#基于深度学习的无监督和半监督视频异常检测方法综述</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png" alt></p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。</p>
+<p>##关键词<br>无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。</p>
+<p>##1绪论<br>​    随着生成式模型（如VAE、GANs、LSTMs等）的出现，无监督表示学习成为了一个重要的领域。在机器学习和数据挖掘中，异常检测是无监督学习有名的子领域。由于图像的高维结构和帧间的非局域时间变化，使得图像和视频的异常检测具有挑战性。</p>
+<p>​    我们回顾1.深度卷积架构来进行特征或者表示端到端学习。2.专门用于视频异常检测任务的预测和生成式模型。异常检测是一项无监督学习任务，其目标是识别数据中的异常的模式或运动（不常见或罕见的事件）。此外，异常很少被标注，并且标记了的数据很少可用于训练一个深度卷积网络来分离正常类和异常类。正常类的样例包含频繁出现的目标和顾虑的前景运动，而异常类包含了各种类型的稀有事件和未见过的目标，这被归纳为一类。所以这项任务很难。无异常的长视频流是可用的，用来为视频流上的移动窗口构建表示，在检测异常运动和外观(如场景中的异常对象)时，估计正常类的行为表现。</p>
+<p>​    给定一组没有异常的训练样本，异常检测的目标是设计或者学习一个特征表示（功能），能够捕获正常的运动和空间外观模式（这里，我感觉模式就是运动和空间外观的变化规律）。任意一个远离正常的异常可以通过 （几何上地在一个向量空间中 或 在给定一个模型的后验概率中）测量近似误差来判别，或者通过给定过去的值，对未来样本的条件概率建模，并在训练好的预测模型上测量测试样本的预测误差 ，这样就考虑了视频中的时间结构。</p>
+<p>###1.1 异常检测</p>
+<p>​    异常检测是一个无监督模式识别任务，可以在不同的统计模型下定义。在本研究中，我们将探讨用主成分分析进行线性近似的模型，用各种类型的自动编码器进行非线性近似的模型，以及最后的深层生成模型。</p>
+<p>​    直观地，观察一个在不同变换作用下的复杂系统，正常的表现可以通过一些样本点描述，并根据上述的正常样本表现样例建立一个统计模型，对未见过的样例泛化能力很好。<br>正常类的分布$\mathscr{D}$可以通过训练样本$\mathbf{x}<em>{i} \in X</em>{\text { train }}$来估计，通过建立一个表示$f_{\theta} : X_{\text { train }} \rightarrow \mathbb{R}$，最小化模型整个训练样本的预测损失</p>
+<center>$\theta^{*}=\underset{\theta}{\operatorname{argmin}} \sum_{\mathbf{x}_{i} \in X_{\text { train }}} L_{\mathscr{D}}\left(\theta ; \mathbf{x}_{i}\right)=\underset{\theta}{\operatorname{argmin}} \sum_{\mathbf{x}_{i} \in X_{\text { train }}}\left\|f_{\theta}\left(\mathbf{x}_{i}\right)-\mathbf{x}_{i}\right\|^{2}     (  式1  )$</center>
+现在，测试样本$\mathbf{x}_{j} \in X_{\text { test }}$在这个表示$f_{\theta^{*}}$下的偏离程度被用来评估异常得分，$a\left(\mathbf{x}_{j}\right)=\left\|f_{\theta^{*}}\left(\mathbf{x}_{j}\right)-\mathbf{x}_{j}\right\|_{2}$用来度量偏离程度。对于上述模型，异常点是一些在模型$f_{\theta^{*}}$评估后近似很差的样本点。通过在异常得分上评估一个阈值$a_{j}>T_{\text { thresh }}$来实现检测。阈值是检测算法的一个参数，阈值的变化对检测性能的影响将会在ROC曲线下面积那一节讨论。对于概率模型，异常点被定义为那些位于在输入训练分布$P(\mathbf{x} | \theta)$的低密度或低浓度区域的样本点。
+
+<p>​    在动作识别、动作相似度、场景分类、目标识别、语义视频分割、人体姿态估计、人体行为识别等多种任务中，表示学习使得视频数据的特征提取变得自动化。视频中的无监督学习任务包括异常检测、无监督表示学习、视频生成模型、视频预测。</p>
+<h3 id="1-2-数据集"><a href="#1-2-数据集" class="headerlink" title="1.2 数据集"></a>1.2 数据集</h3><p>我们现在定义了视频异常检测问题的设置。被考虑的视频来自一个监控摄像头，背景保持静止，而前景则是行人、交通等移动物体的图像。异常事件是指与训练集中观察到的正常模式相背离的外观和运动模式的变化。图1中展示了几个例子：</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26ad398ed3b27732.png" alt="图1"></p>
+<center>图1：前两行是UCSD,最下面一行是CUHK Avenue</center>
+
+<p>​    虽然这里我们没有详尽，但是我们列举了一些经常被用来评估的数据集。<strong>UCSD数据集</strong>是由行人组成的，在一个通常有行人沿着道路行走的场景中，异常时刻的实例对应于物体的出现，如自行车、轮椅和汽车。还有，在不寻常的地方行走的人也被认为是不正常的。在<strong>CUHK Avenue数据集</strong>中，异常对应的是一些奇怪的行为，比如一个人扔纸或包，向不寻常的方向移动，以及像包和自行车这样的不寻常物体的出现。在<strong>地铁进出站数据集</strong>中，人们在错误的方向移动，闲逛等被认为是异常现象。UMN数据集由展示异常的人群活动的视频组成，是视频异常检测问题的一个特例。火车数据集[12]包含火车上的移动人员。这些异常事件主要是由于火车上的人不寻常的移动。最后，伦敦玛丽女王大学的u型转弯数据集[13]包含了正常的交通和异常事件，如横穿马路和消防车的移动。近年来，有人提出了一种基于受控环境的LV数据集，并给出了具有挑战性的在线视频异常检测实例。</p>
+<h2 id="2视频异常检测中的表示学习"><a href="#2视频异常检测中的表示学习" class="headerlink" title="2视频异常检测中的表示学习"></a>2视频异常检测中的表示学习</h2><p>因为空间结构和局部时间的变化性，视频是高维度信号。视频异常检测的一个重要问题是学习表示输入样本空间到一个n维向量$f_{\theta} : \mathscr{X} \rightarrow \mathbb{R}^{d}$。学习特征的这个想法是去自动的找到一个关于输入空间好的表示,这考虑了这个问题重要的先验信息。根据天下没有免费午餐定理指出，对于每一个训练分布$\mathscr {D}$，不存在通用的学习器。继已建立的视频异常检测工作之后，该任务具体包括了：检测模型的偏离程度，如静态背景、正常人群的外观、光流运动、轨迹的变化等先验信息。建立一个参数化的模型$f_{\theta} : x \rightarrow \mathcal{Z} \rightarrow x$ ，在这个研究中，我们主要研究重构输入的表示，而潜在空间Z被限制不随输入的变化而改变，比如亮度的变化、场景中物体的平移等这些并没有偏离正常运动模式的变化。这提供了一种方法引入先验信息来重建正常样本。</p>
+<h3 id="2-1分类"><a href="#2-1分类" class="headerlink" title="2.1分类"></a>2.1分类</h3><p>本文的主要目标是为目前基于无监督和半监督方法的视频异常检测方法做一个简要的综述。本文将基本的视频表示或模型描述如下：</p>
+<p>1） <strong>用来重构的表示学习</strong> ：采用主成分分析(PCA)、自动编码器(AEs)等方法对图像（image）或运动(flow)进行不同的线性和非线性变换,这就为监控录像中的不良行为建立了模型。在重构很差的那种偏离程度表现为异常。</p>
+<p>2）<strong>预测模型</strong>：</p>
 
       
     </div>
@@ -331,13 +353,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2019/05/31/2019.5.31梁老师组会笔记/">2019.5.31梁老师组会笔记</a></p>
+        <p><span>本文标题:</span><a href="/2019/08/12/视频异常检测综述/">视频异常检测（VAD）综述(译)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">toprocker</a></p>
-        <p><span>发布时间:</span>2019-05-31, 10:21:20</p>
-        <p><span>最后更新:</span>2019-08-12, 11:14:11</p>
+        <p><span>发布时间:</span>2019-08-12, 17:20:25</p>
+        <p><span>最后更新:</span>2019-08-12, 17:21:44</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/05/31/2019.5.31梁老师组会笔记/" title="2019.5.31梁老师组会笔记">http://yoursite.com/2019/05/31/2019.5.31梁老师组会笔记/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/05/31/2019.5.31梁老师组会笔记/　　作者: toprocker" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/08/12/视频异常检测综述/" title="视频异常检测（VAD）综述(译)">http://yoursite.com/2019/08/12/视频异常检测综述/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/08/12/视频异常检测综述/　　作者: toprocker" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -349,16 +371,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2019/07/04/2019.7.4梁老师组会笔记/">
-                    2019.7.4梁老师组会笔记
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2019/01/07/linux配置pytorch/">
-                    linux配置pytorch
+                <a href="/2019/08/12/我的第二篇博客：新航威武/">
+                    我的第二篇博客：新航威武
                 </a>
             </div>
         
@@ -370,7 +386,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#用于神经网络置信度"><span class="toc-number">1.</span> <span class="toc-text">用于神经网络置信度</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-数据集"><span class="toc-number">1.1.</span> <span class="toc-text">1.2 数据集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2视频异常检测中的表示学习"><span class="toc-number">2.</span> <span class="toc-text">2视频异常检测中的表示学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1分类"><span class="toc-number">2.1.</span> <span class="toc-text">2.1分类</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -406,7 +422,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"2019.5.31梁老师组会笔记　| toprocker　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"视频异常检测（VAD）综述(译)　| toprocker　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -426,15 +442,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2019/07/04/2019.7.4梁老师组会笔记/" title="上一篇: 2019.7.4梁老师组会笔记">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2019/01/07/linux配置pytorch/" title="下一篇: linux配置pytorch">
+            <a href="/2019/08/12/我的第二篇博客：新航威武/" title="下一篇: 我的第二篇博客：新航威武">
                 <i class="fa fa-angle-right"></i>
             </a>
         
