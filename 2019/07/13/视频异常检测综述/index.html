@@ -15,20 +15,20 @@
 
 
 
-<meta name="description" content="#基于深度学习的无监督和半监督视频异常检测方法综述  摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。 ##关键词无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。 ##1绪论​    随着生">
+<meta name="description" content="基于深度学习的无监督和半监督视频异常检测方法综述 摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。">
 <meta name="keywords" content="DL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="视频异常检测（VAD）综述(译)">
-<meta property="og:url" content="http://yoursite.com/2019/08/12/视频异常检测综述/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/07/13/视频异常检测综述/index.html">
 <meta property="og:site_name" content="toprocker">
-<meta property="og:description" content="#基于深度学习的无监督和半监督视频异常检测方法综述  摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。 ##关键词无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。 ##1绪论​    随着生">
+<meta property="og:description" content="基于深度学习的无监督和半监督视频异常检测方法综述 摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png">
 <meta property="og:image" content="https://i.loli.net/2019/07/11/5d26ad398ed3b27732.png">
-<meta property="og:updated_time" content="2019-08-12T09:21:44.538Z">
+<meta property="og:updated_time" content="2019-08-12T09:28:34.304Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="视频异常检测（VAD）综述(译)">
-<meta name="twitter:description" content="#基于深度学习的无监督和半监督视频异常检测方法综述  摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。 ##关键词无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。 ##1绪论​    随着生">
+<meta name="twitter:description" content="基于深度学习的无监督和半监督视频异常检测方法综述 摘要​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。">
 <meta name="twitter:image" content="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -285,8 +285,8 @@
       <div class="body-wrap"><article id="post-视频异常检测综述" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/08/12/视频异常检测综述/" class="article-date">
-      <time datetime="2019-08-12T09:20:25.497Z" itemprop="datePublished">2019-08-12</time>
+      <a href="/2019/07/13/视频异常检测综述/" class="article-date">
+      <time datetime="2019-07-13T04:12:12.000Z" itemprop="datePublished">2019-07-13</time>
 </a>
 
 
@@ -322,15 +322,15 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>#基于深度学习的无监督和半监督视频异常检测方法综述</p>
-<p><img src="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png" alt></p>
+        <h1 id="基于深度学习的无监督和半监督视频异常检测方法综述"><a href="#基于深度学习的无监督和半监督视频异常检测方法综述" class="headerlink" title="基于深度学习的无监督和半监督视频异常检测方法综述"></a>基于深度学习的无监督和半监督视频异常检测方法综述</h1><p><img src="https://i.loli.net/2019/07/11/5d26f2aadd3ae37823.png" alt></p>
 <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>​    在监控应用中，视频是主要的信息源，但大多数时候没有标签。本文综述了最新的视频异常检测方法，并根据模型的类型和检测的标准进行分类。我们实现了简单的研究来理解不同的方法，并提出时空异常检测的评价标准。</p>
-<p>##关键词<br>无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。</p>
-<p>##1绪论<br>​    随着生成式模型（如VAE、GANs、LSTMs等）的出现，无监督表示学习成为了一个重要的领域。在机器学习和数据挖掘中，异常检测是无监督学习有名的子领域。由于图像的高维结构和帧间的非局域时间变化，使得图像和视频的异常检测具有挑战性。</p>
+<a id="more"></a>
+
+<h2 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h2><p>无监督方法、异常检测、表示学习、自动编码器、长短时记忆、生成式对抗网、变分自动编码器、预测模型。</p>
+<h2 id="1绪论"><a href="#1绪论" class="headerlink" title="1绪论"></a>1绪论</h2><p>​    随着生成式模型（如VAE、GANs、LSTMs等）的出现，无监督表示学习成为了一个重要的领域。在机器学习和数据挖掘中，异常检测是无监督学习有名的子领域。由于图像的高维结构和帧间的非局域时间变化，使得图像和视频的异常检测具有挑战性。</p>
 <p>​    我们回顾1.深度卷积架构来进行特征或者表示端到端学习。2.专门用于视频异常检测任务的预测和生成式模型。异常检测是一项无监督学习任务，其目标是识别数据中的异常的模式或运动（不常见或罕见的事件）。此外，异常很少被标注，并且标记了的数据很少可用于训练一个深度卷积网络来分离正常类和异常类。正常类的样例包含频繁出现的目标和顾虑的前景运动，而异常类包含了各种类型的稀有事件和未见过的目标，这被归纳为一类。所以这项任务很难。无异常的长视频流是可用的，用来为视频流上的移动窗口构建表示，在检测异常运动和外观(如场景中的异常对象)时，估计正常类的行为表现。</p>
 <p>​    给定一组没有异常的训练样本，异常检测的目标是设计或者学习一个特征表示（功能），能够捕获正常的运动和空间外观模式（这里，我感觉模式就是运动和空间外观的变化规律）。任意一个远离正常的异常可以通过 （几何上地在一个向量空间中 或 在给定一个模型的后验概率中）测量近似误差来判别，或者通过给定过去的值，对未来样本的条件概率建模，并在训练好的预测模型上测量测试样本的预测误差 ，这样就考虑了视频中的时间结构。</p>
-<p>###1.1 异常检测</p>
-<p>​    异常检测是一个无监督模式识别任务，可以在不同的统计模型下定义。在本研究中，我们将探讨用主成分分析进行线性近似的模型，用各种类型的自动编码器进行非线性近似的模型，以及最后的深层生成模型。</p>
+<h3 id="1-1-异常检测"><a href="#1-1-异常检测" class="headerlink" title="1.1 异常检测"></a>1.1 异常检测</h3><p>​    异常检测是一个无监督模式识别任务，可以在不同的统计模型下定义。在本研究中，我们将探讨用主成分分析进行线性近似的模型，用各种类型的自动编码器进行非线性近似的模型，以及最后的深层生成模型。</p>
 <p>​    直观地，观察一个在不同变换作用下的复杂系统，正常的表现可以通过一些样本点描述，并根据上述的正常样本表现样例建立一个统计模型，对未见过的样例泛化能力很好。<br>正常类的分布$\mathscr{D}$可以通过训练样本$\mathbf{x}<em>{i} \in X</em>{\text { train }}$来估计，通过建立一个表示$f_{\theta} : X_{\text { train }} \rightarrow \mathbb{R}$，最小化模型整个训练样本的预测损失</p>
 <center>$\theta^{*}=\underset{\theta}{\operatorname{argmin}} \sum_{\mathbf{x}_{i} \in X_{\text { train }}} L_{\mathscr{D}}\left(\theta ; \mathbf{x}_{i}\right)=\underset{\theta}{\operatorname{argmin}} \sum_{\mathbf{x}_{i} \in X_{\text { train }}}\left\|f_{\theta}\left(\mathbf{x}_{i}\right)-\mathbf{x}_{i}\right\|^{2}     (  式1  )$</center>
 现在，测试样本$\mathbf{x}_{j} \in X_{\text { test }}$在这个表示$f_{\theta^{*}}$下的偏离程度被用来评估异常得分，$a\left(\mathbf{x}_{j}\right)=\left\|f_{\theta^{*}}\left(\mathbf{x}_{j}\right)-\mathbf{x}_{j}\right\|_{2}$用来度量偏离程度。对于上述模型，异常点是一些在模型$f_{\theta^{*}}$评估后近似很差的样本点。通过在异常得分上评估一个阈值$a_{j}>T_{\text { thresh }}$来实现检测。阈值是检测算法的一个参数，阈值的变化对检测性能的影响将会在ROC曲线下面积那一节讨论。对于概率模型，异常点被定义为那些位于在输入训练分布$P(\mathbf{x} | \theta)$的低密度或低浓度区域的样本点。
@@ -353,13 +353,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2019/08/12/视频异常检测综述/">视频异常检测（VAD）综述(译)</a></p>
+        <p><span>本文标题:</span><a href="/2019/07/13/视频异常检测综述/">视频异常检测（VAD）综述(译)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">toprocker</a></p>
-        <p><span>发布时间:</span>2019-08-12, 17:20:25</p>
-        <p><span>最后更新:</span>2019-08-12, 17:21:44</p>
+        <p><span>发布时间:</span>2019-07-13, 12:12:12</p>
+        <p><span>最后更新:</span>2019-08-12, 17:28:34</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/08/12/视频异常检测综述/" title="视频异常检测（VAD）综述(译)">http://yoursite.com/2019/08/12/视频异常检测综述/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/08/12/视频异常检测综述/　　作者: toprocker" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/07/13/视频异常检测综述/" title="视频异常检测（VAD）综述(译)">http://yoursite.com/2019/07/13/视频异常检测综述/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/07/13/视频异常检测综述/　　作者: toprocker" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -371,10 +371,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2019/08/12/我的第一篇博客：宗廉牛逼/">
+                    我的第一篇博客：宗廉牛逼
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2019/08/12/我的第二篇博客：新航威武/">
-                    我的第二篇博客：新航威武
+                <a href="/2019/07/04/2019.7.4梁老师组会笔记/">
+                    2019.7.4梁老师组会笔记
                 </a>
             </div>
         
@@ -386,7 +392,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-数据集"><span class="toc-number">1.1.</span> <span class="toc-text">1.2 数据集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2视频异常检测中的表示学习"><span class="toc-number">2.</span> <span class="toc-text">2视频异常检测中的表示学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1分类"><span class="toc-number">2.1.</span> <span class="toc-text">2.1分类</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#基于深度学习的无监督和半监督视频异常检测方法综述"><span class="toc-number">1.</span> <span class="toc-text">基于深度学习的无监督和半监督视频异常检测方法综述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关键词"><span class="toc-number">1.2.</span> <span class="toc-text">关键词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1绪论"><span class="toc-number">1.3.</span> <span class="toc-text">1绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-异常检测"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.1 异常检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-数据集"><span class="toc-number">1.3.2.</span> <span class="toc-text">1.2 数据集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2视频异常检测中的表示学习"><span class="toc-number">1.4.</span> <span class="toc-text">2视频异常检测中的表示学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1分类"><span class="toc-number">1.4.1.</span> <span class="toc-text">2.1分类</span></a></li></ol></li></ol></li></ol>
         
     </div>
     <style>
@@ -442,19 +448,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2019/08/12/我的第一篇博客：宗廉牛逼/" title="上一篇: 我的第一篇博客：宗廉牛逼">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2019/08/12/我的第二篇博客：新航威武/" title="下一篇: 我的第二篇博客：新航威武">
+            <a href="/2019/07/04/2019.7.4梁老师组会笔记/" title="下一篇: 2019.7.4梁老师组会笔记">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/视频异常检测综述/">视频异常检测（VAD）综述(译)</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/我的第二篇博客：新航威武/">我的第二篇博客：新航威武</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/我的第一篇博客：宗廉牛逼/">我的第一篇博客：宗廉牛逼</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/04/2019.7.4梁老师组会笔记/">2019.7.4梁老师组会笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/31/2019.5.31梁老师组会笔记/">2019.5.31梁老师组会笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/07/linux配置pytorch/">linux配置pytorch</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/我的第二篇博客：新航威武/">我的第二篇博客：新航威武</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/我的第一篇博客：宗廉牛逼/">我的第一篇博客：宗廉牛逼</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/13/视频异常检测综述/">视频异常检测（VAD）综述(译)</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/04/2019.7.4梁老师组会笔记/">2019.7.4梁老师组会笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/31/2019.5.31梁老师组会笔记/">2019.5.31梁老师组会笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/07/linux配置pytorch/">linux配置pytorch</a></li></ul>
 
 
 
@@ -520,6 +528,27 @@
 
 
 
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">
