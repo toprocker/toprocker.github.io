@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>2019.5.31梁老师组会笔记 | toprocker</title>
+  <title>toprocker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="图像处理，最开始描述子用来表示特征，局部特征脑科学、认知学、心理学图像中：一条直线、一个圆；梯度不变，梯度均匀变化">
-<meta name="keywords" content="组会笔记">
+  <meta name="description" content="Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1本博客所有所需文件百度云链接(提取码：nl85) 一.安装双系统（win10+ubuntu16.04) 在win10下载Rufus(启动盘制作工具)官网下载、csdn下载 下载Ubuntu16.04镜像官网下载、中科大源、阿里云源、兰州大学源、浙江大学源 用Rufus制作好启动盘，进入BIOS，选">
+<meta name="keywords" content="AI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019.5.31梁老师组会笔记">
-<meta property="og:url" content="http://yoursite.com/2019/05/31/2019.5.31梁老师组会笔记/index.html">
+<meta property="og:title" content="toprocker">
+<meta property="og:url" content="http://yoursite.com/2019/08/12/Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1/index.html">
 <meta property="og:site_name" content="toprocker">
-<meta property="og:description" content="图像处理，最开始描述子用来表示特征，局部特征脑科学、认知学、心理学图像中：一条直线、一个圆；梯度不变，梯度均匀变化">
+<meta property="og:description" content="Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1本博客所有所需文件百度云链接(提取码：nl85) 一.安装双系统（win10+ubuntu16.04) 在win10下载Rufus(启动盘制作工具)官网下载、csdn下载 下载Ubuntu16.04镜像官网下载、中科大源、阿里云源、兰州大学源、浙江大学源 用Rufus制作好启动盘，进入BIOS，选">
 <meta property="og:locale" content="ch">
-<meta property="og:updated_time" content="2019-08-12T03:14:11.082Z">
+<meta property="og:updated_time" content="2019-08-12T03:19:15.630Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2019.5.31梁老师组会笔记">
-<meta name="twitter:description" content="图像处理，最开始描述子用来表示特征，局部特征脑科学、认知学、心理学图像中：一条直线、一个圆；梯度不变，梯度均匀变化">
+<meta name="twitter:title" content="toprocker">
+<meta name="twitter:description" content="Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1本博客所有所需文件百度云链接(提取码：nl85) 一.安装双系统（win10+ubuntu16.04) 在win10下载Rufus(启动盘制作工具)官网下载、csdn下载 下载Ubuntu16.04镜像官网下载、中科大源、阿里云源、兰州大学源、浙江大学源 用Rufus制作好启动盘，进入BIOS，选">
   
     <link rel="alternative" href="/atom.xml" title="toprocker" type="application/atom+xml">
   
@@ -167,30 +167,65 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2019.5.31梁老师组会笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      2019.5.31梁老师组会笔记
-    </h1>
-  
-
-        
-        <a href="/2019/05/31/2019.5.31梁老师组会笔记/" class="archive-article-date">
-  	<time datetime="2019-05-31T02:21:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-31</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>图像处理，最开始描述子用来表示特征，局部特征<br>脑科学、认知学、心理学<br>图像中：一条直线、一个圆；梯度不变，梯度均匀变化</p>
-<a id="more"></a>
-<p>人在认知图像特征的时候不是依靠全局特征，而是依靠局部特征<br>局部梯度变化的集合来表示这个点<br>每个点都统计局部特征，再来看它的分布 bag of words<br>深度学习本质上也是用深层的网络中提取这种bags of words<br>区别：以前是直接从图像中提取出特征，而神经网络是不断从特征图中提取特征<br>以前的方法之所以不太好，欲速则不达<br>实际中计算机如何实现求连续函数的梯度，不是简单的做差去平均，而是用一阶高斯函数卷积<br>高斯函数怎么来的，心理学，盯住一个东西，周围是模糊的，越远越模糊<br>训练之后神经网络中的卷积核就是0阶高斯、1阶高斯、2阶高斯等<br>离散空间中也有高斯核<br>17：47 周颖学姐<br>目标检测-&gt;半监督训练目标间的关系，j个关系训练j个决策树<br>生成模型 exp(AY)<br>决策树怎么跑无标签数据？怎么用无标签数据来提高模型的效果？ </p>
-<h2 id="用于神经网络置信度"><a href="#用于神经网络置信度" class="headerlink" title="用于神经网络置信度"></a>用于神经网络置信度</h2><p>训练数据外的数据被视为异常<br>18:32 王倩楠学姐<br>内存溢出问题，图像大小256，老师说可以把图缩小为128*128<br>18：44 谷老师<br>人与人交流时情感<br>表情、语气、姿势都能够表达情感<br>提取最有效的特征，比如说语音的大小<br>特征提取-》特征选择-》分类</p>
+        <h1 id="Ubuntu16-04-Python3-6-Cuda9-2-Cudnn7-2-Pytorch0-4-1"><a href="#Ubuntu16-04-Python3-6-Cuda9-2-Cudnn7-2-Pytorch0-4-1" class="headerlink" title="Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1"></a>Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1</h1><p>本博客所有所需文件<a href="https://pan.baidu.com/s/1LFKZb94R41DL9GZSK_lPKg" target="_blank" rel="noopener">百度云链接</a>(提取码：nl85)</p>
+<h2 id="一-安装双系统（win10-ubuntu16-04"><a href="#一-安装双系统（win10-ubuntu16-04" class="headerlink" title="一.安装双系统（win10+ubuntu16.04)"></a>一.安装双系统（win10+ubuntu16.04)</h2><ol>
+<li>在win10下载<strong>Rufus</strong>(启动盘制作工具)<a href="https://rufus.ie/" target="_blank" rel="noopener">官网下载</a>、<a href="https://download.csdn.net/download/wqq1027/10861124?utm_source=bbsseo" target="_blank" rel="noopener">csdn下载</a></li>
+<li>下载<strong>Ubuntu16.04</strong>镜像<a href="http://www.ubuntu.org.cn/download/desktop" target="_blank" rel="noopener">官网下载</a>、<a href="http://mirrors.ustc.edu.cn/ubuntu-releases/16.04/" target="_blank" rel="noopener">中科大源</a>、<a href="http://mirrors.aliyun.com/ubuntu-releases/16.04/" target="_blank" rel="noopener">阿里云源</a>、<a href="http://mirror.lzu.edu.cn/ubuntu-releases/16.04/" target="_blank" rel="noopener">兰州大学源</a>、<a href="http://mirrors.zju.edu.cn/ubuntu-releases/16.04/" target="_blank" rel="noopener">浙江大学源</a></li>
+<li>用Rufus制作好启动盘，进入<strong>BIOS</strong>，选择U盘启动。<a href="https://blog.csdn.net/jesse_mx/article/details/61425361#comments" target="_blank" rel="noopener">制作教程</a></li>
+<li>选择Install Ubuntu,中间选择<strong>与win10共存</strong>（不要清除整个磁盘），直到安装完成，拔下U盘,点击立即重启</li>
+</ol>
+<ul>
+<li>注：如果开机启动后发现只有ubuntu，不要着急，开机后终端输入:<figure class="highlight plain"><figcaption><span>sudo apt-get install grub```下次开机就能看到win10了</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## 二.Ubuntu 更改下载源为国内源</span><br><span class="line">1. 备份原来的源</span><br><span class="line">	```sudo cp /etc/apt/sources.list /etc/apt/sources_init.list</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>输入命令修改sources.list文件</p>
+ <figure class="highlight plain"><figcaption><span>gedit</span><a href="/etc/apt/sources.list```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">3. 在文件最前面添加以下条目（清华源）：</span><br><span class="line">	&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">- 注：如果要添加其他源，就[点我](https://blog.csdn.net/s124295707070/article/details/86569847)</span><br><span class="line">4. 更新源</span><br><span class="line">```sudo apt-get update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复损坏的软件包，尝试卸载出错的包，重新安装正确版本</p>
+ <figure class="highlight plain"><figcaption><span>apt-get -f install```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">## 三.安装NVIDIA驱动(NVIDIA-Linux-x86_64-396.18)</span><br><span class="line">1. 去[NVIDIA官网](https://www.geforce.cn/drivers)下载合适的驱动</span><br><span class="line">		注意！！！：驱动文件最好放在主文件夹下为之后安装驱动准备！！！</span><br><span class="line">2. 软件和更新 -&gt; 附加驱动 -&gt; 继续使用手动安装的驱动</span><br><span class="line">3. 准备工作 </span><br><span class="line">		```$ lsmod | grep nouveau```ubuntu自带的nouveau驱动会影响安装 若有输出,执行以下几步，没有的话就跳到4</span><br><span class="line">		```$ cd /etc/modprobe.d</span><br></pre></td></tr></table></figure>
+
+<pre><code><figure class="highlight plain"><figcaption><span>sudo touch blacklist-nouveau.conf```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```$ sudo gedit blacklist-nouveau.conf</span><br></pre></td></tr></table></figure>
+
+在打开的文件中输入</code></pre><blockquote>
+<p> blacklist nouveau</p>
+<pre><code>options nouveau modeset=0</code></pre></blockquote>
+ <figure class="highlight plain"><figcaption><span>sudo update-initramfs -u```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```$ reboot</span><br></pre></td></tr></table></figure>
+
+<pre><code>重启后 重新从三.3开始</code></pre></li>
+<li><p>安装驱动</p>
+<pre><code><figure class="highlight plain"><figcaption><span>sudo apt-get remove --purge nvidia-* ```卸载掉原有驱动</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">		CTRL + ALT +F1 进入字符界面,以下两行命令需要记下来在进入前记下来</span><br><span class="line">		注意：CTRL + ALT + F7 是回到图形界面，不过本文从始至终不需要从字符界面回到图形界面</span><br><span class="line">		```$ sudo chmod a+x NVIDIA-Linux-x86_64-396.18.run```获取权限</span><br><span class="line">		```$  sudo ./NVIDIA-Linux-x86_64-396.18.run -no-x-check -no-nouveau-check -no-opengl-files```安装驱动</span><br><span class="line">		-no-opengl-files 意思是不安装opengl，如果安装的话可能会导致循环登陆！</span><br><span class="line">		```$ reboot```重启</span><br><span class="line">		```$ nvidia-smi```如果出现一个表格，则安装完成</span><br><span class="line">## 四.安装python3.6并设为默认([参考来源](https://www.jianshu.com/p/2a5cd519e583))</span><br><span class="line">-   ```$ add-apt-repository ppa:jonathonf/python-3.6```添加ppa到系统</span><br><span class="line">	```$ apt-get update```更新</span><br><span class="line">	```$  sudo apt-get install python3.6-dev</span><br></pre></td></tr></table></figure></code></pre> <figure class="highlight plain"><figcaption><span>sudo apt-get install python3.6-gdbm```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	```ls -l /usr/bin | grep python```查看python命令指向：</span><br><span class="line">	```rm /usr/bin/python```删除原有python软连接</span><br><span class="line">	```ln -s /usr/bin/python3.6 /usr/bin/python```建立python到python3.6新的软链接</span><br><span class="line">	```apt-get install python3-pip```安装python3版本pip</span><br><span class="line">	```ln -s /usr/bin/pip3 /usr/bin/pip```建立pip到pip3的软连接。</span><br><span class="line">## 五.安装cuda9.2.148_396.37_linux</span><br><span class="line">- 去Cuda官网下载Cuda9.2</span><br><span class="line">```$ sudo sh cuda9.2.148_396.37_linux.run```注意：提示安装驱动时选否</span><br><span class="line">```$ sudo gedit /etc/profile</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>添加如下内容：<br>    &gt;export PATH=/usr/local/cuda-9.2/bin:$PATH<br>        export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64$LD_LIBRARY_PATH</p>
+<ul>
+<li><p>保存，重启</p>
+  <figure class="highlight plain"><figcaption><span>cd</span><a href="/usr/local/cuda-9.2/samples/1_Utilities/deviceQuery```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```$ sudo make</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><figcaption><span>./deviceQuery ```结果如果是 result </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-	注： 若要卸载重装</span><br><span class="line">	&gt;$ cd /usr/local/cuda/bin</span><br><span class="line">			$ sudo ./uninstall_cuda_9.2.pl</span><br><span class="line">## 六.安装Cudnn7.2.1.38</span><br><span class="line">- ```sudo tar -zxvf ./cudnn-9.2-linux-x64-v7.2.1.38.tgz```也可以手动右键解压（提取）</span><br><span class="line">	```cd cuda/include</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><figcaption><span>cp cudnn.h</span><a href="/usr/local/cuda/include```复制头文件">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```cd ..</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><figcaption><span>lib64 ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```sudo cp lib* /usr/local/cuda/lib64/```复制动态链接库</span><br><span class="line">```cd /usr/local/cuda/lib64/</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plain"><figcaption><span>rm -rf libcudnn.so libcudnn.so.7```删除原有动态文件</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">	```sudo ln -s libcudnn.so.7.2.1 libcudnn.so.7```生成软衔接</span><br><span class="line">	注意这里要和自己下载的cudnn版本对应，可以在/usr/local/cuda/lib64下查看自己libcudnn的版本</span><br><span class="line">	```sudo ln -s libcudnn.so.7 libcudnn.so```生成软链接</span><br><span class="line">-	下面一步至关重要：</span><br><span class="line">	```sudo ldconfig -v ```必须在/usr/local/cuda/lib64/目录下执行，否则可能会报libcudnn.so.7: cannot open shared object file: No such file or directory</span><br><span class="line">		**或者**：```$ sudo ldconfig /usr/local/cuda/lib64</span><br></pre></td></tr></table></figure>
+
+<pre><code>至此，Cudnn配置完成</code></pre><h2 id="七-安装Pytorch0-4-1"><a href="#七-安装Pytorch0-4-1" class="headerlink" title="七.安装Pytorch0.4.1"></a>七.安装Pytorch0.4.1</h2></li>
+<li><p>下载<br>  <a href="http://pytorch.org/get-started/previous-versions/" target="_blank" rel="noopener">官网下载</a></p>
+</li>
+<li><p>安装</p>
+  <figure class="highlight plain"><figcaption><span>sudo pip install torch-0.4.1-cp36-cp36m-linux_x86_64.whl```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- 如果需要安装python3的包，可以按如下格式安装</span><br><span class="line">```$ sudo pip isntall numpy -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="八-安装Pycharm"><a href="#八-安装Pycharm" class="headerlink" title="八.安装Pycharm"></a>八.安装Pycharm</h2><ul>
+<li><a href="http://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">官网下载</a><br>下载LInux 社区版（Community）<br><a href="https://blog.csdn.net/zhuanshu666/article/details/73554885" target="_blank" rel="noopener">安装方法</a></li>
+</ul>
 
       
 
@@ -230,17 +265,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">组会笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -291,7 +315,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/31/2019.5.31梁老师组会笔记/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/12/Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -305,15 +329,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/04/2019.7.4梁老师组会笔记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          2019.7.4梁老师组会笔记
-        
-      </div>
-    </a>
   
+    <a href="/2019/08/12/我的第二篇博客：新航威武/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第二篇博客：新航威武</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -338,7 +358,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#用于神经网络置信度"><span class="toc-number">1.</span> <span class="toc-text">用于神经网络置信度</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu16-04-Python3-6-Cuda9-2-Cudnn7-2-Pytorch0-4-1"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu16.04+Python3.6+Cuda9.2+Cudnn7.2+Pytorch0.4.1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-安装双系统（win10-ubuntu16-04"><span class="toc-number">1.1.</span> <span class="toc-text">一.安装双系统（win10+ubuntu16.04)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七-安装Pytorch0-4-1"><span class="toc-number">1.2.</span> <span class="toc-text">七.安装Pytorch0.4.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八-安装Pycharm"><span class="toc-number">1.3.</span> <span class="toc-text">八.安装Pycharm</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
