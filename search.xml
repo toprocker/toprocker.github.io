@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2019/08/13/post-name/"/>
+      <url>/2019/08/13/post-name/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>吴恩达机器学习笔记(一)</title>
+      <link href="/2019/08/13/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/"/>
+      <url>/2019/08/13/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是机器学习？"><a href="#什么是机器学习？" class="headerlink" title="什么是机器学习？"></a>什么是机器学习？</h2><p>即使是在机器学习从业者中，也没有对机器学习的统一定义。下面说说一些现有的机器学习定义。</p><p>1.Arthur Samuel对机器学习的定义：在没有明确设置的情况下，使计算机具有学习能力的研究领域。（比较不正式，也比较陈旧）</p><p><div align="center"><img src="1.jpg" alt><br>（Samuwl成名是在1950年代，他编写了一个跳棋游戏程序，惊讶的是他本人并不是一个玩跳棋的高手，他所做的是使程序自己对弈几万次，通过观察哪些布局容易赢、哪些布局容易输，一段时间后，跳棋程序就学到了什么是好的布局、什么是不好的布局，最终程序学会了玩跳棋，并比Samuel玩得好，因为比起人，计算机更有耐心来对弈这么多局，获得丰富的跳棋经验）</div></p><a id="more"></a><p>2.一个更新的定义，由TomMitchell提出：计算机程序从经验E中学习解决某一任务T进行某一性能度量指标P,通过P测定在T上面的表现因经验E而提高。</p><p><div align="center"><img src="2.jpg" alt><br>（对于跳棋游戏而言，经验E就是程序与自己下几万次跳棋，任务T就是下跳棋，性能度量P就是与新对手玩跳棋时赢得概率）</div></p><p><div align="center"><img src="0.jpg" alt></div></p><center>一个检测你之前有没有学懂得问题</center><p>我们将学到各种不同类型得学习算法，最主要得两类是监督学习和无监督学习。其他有：强化学习、推荐系统<br>简单而言，监督学习就是我们会教计算机做某件事情，而在无监督学习中，我们让计算机自己学习。强化学习和推荐系统我们以后会说。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的第二篇博客：新航威武</title>
       <link href="/2019/08/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%9A%E6%96%B0%E8%88%AA%E5%A8%81%E6%AD%A6/"/>
       <url>/2019/08/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%9A%E6%96%B0%E8%88%AA%E5%A8%81%E6%AD%A6/</url>

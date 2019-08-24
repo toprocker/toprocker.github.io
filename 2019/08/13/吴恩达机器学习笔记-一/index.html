@@ -15,17 +15,22 @@
 
 
 
-<meta name="description" content="this is a description">
-<meta name="keywords" content="AI">
-<meta property="og:type" content="website">
-<meta property="og:title" content="toprocker">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
+<meta name="description" content="什么是机器学习？即使是在机器学习从业者中，也没有对机器学习的统一定义。下面说说一些现有的机器学习定义。 1.Arthur Samuel对机器学习的定义：在没有明确设置的情况下，使计算机具有学习能力的研究领域。（比较不正式，也比较陈旧） （Samuwl成名是在1950年代，他编写了一个跳棋游戏程序，惊讶的是他本人并不是一个玩跳棋的高手，他所做的是使程序自己对弈几万次，通过观察哪些布局容易赢、哪些布局">
+<meta name="keywords" content="ML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吴恩达机器学习笔记(一)">
+<meta property="og:url" content="http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/index.html">
 <meta property="og:site_name" content="toprocker">
-<meta property="og:description" content="this is a description">
+<meta property="og:description" content="什么是机器学习？即使是在机器学习从业者中，也没有对机器学习的统一定义。下面说说一些现有的机器学习定义。 1.Arthur Samuel对机器学习的定义：在没有明确设置的情况下，使计算机具有学习能力的研究领域。（比较不正式，也比较陈旧） （Samuwl成名是在1950年代，他编写了一个跳棋游戏程序，惊讶的是他本人并不是一个玩跳棋的高手，他所做的是使程序自己对弈几万次，通过观察哪些布局容易赢、哪些布局">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/0.jpg">
+<meta property="og:updated_time" content="2019-08-13T07:47:15.049Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="toprocker">
-<meta name="twitter:description" content="this is a description">
+<meta name="twitter:title" content="吴恩达机器学习笔记(一)">
+<meta name="twitter:description" content="什么是机器学习？即使是在机器学习从业者中，也没有对机器学习的统一定义。下面说说一些现有的机器学习定义。 1.Arthur Samuel对机器学习的定义：在没有明确设置的情况下，使计算机具有学习能力的研究领域。（比较不正式，也比较陈旧） （Samuwl成名是在1950年代，他编写了一个跳棋游戏程序，惊讶的是他本人并不是一个玩跳棋的高手，他所做的是使程序自己对弈几万次，通过观察哪些布局容易赢、哪些布局">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/1.jpg">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -57,7 +62,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2019/7 | toprocker</title>
+<title>吴恩达机器学习笔记(一) | toprocker</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,8 +72,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -276,89 +281,181 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-吴恩达机器学习笔记-一" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2019/07/13/视频异常检测综述/" class="archive-article-date">
-      <time datetime="2019-07-13T04:12:12.000Z" itemprop="datePublished">07-13</time>
+    <div class="article-meta">
+      <a href="/2019/08/13/吴恩达机器学习笔记-一/" class="article-date">
+      <time datetime="2019-08-13T07:25:59.000Z" itemprop="datePublished">2019-08-13</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/13/视频异常检测综述/">视频异常检测（VAD）综述(译)</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      吴恩达机器学习笔记(一)
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DL/">DL</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="什么是机器学习？"><a href="#什么是机器学习？" class="headerlink" title="什么是机器学习？"></a>什么是机器学习？</h2><p>即使是在机器学习从业者中，也没有对机器学习的统一定义。下面说说一些现有的机器学习定义。</p>
+<p>1.Arthur Samuel对机器学习的定义：在没有明确设置的情况下，使计算机具有学习能力的研究领域。（比较不正式，也比较陈旧）</p>
+<p><div align="center"><img src="1.jpg" alt><br>（Samuwl成名是在1950年代，他编写了一个跳棋游戏程序，惊讶的是他本人并不是一个玩跳棋的高手，他所做的是使程序自己对弈几万次，通过观察哪些布局容易赢、哪些布局容易输，一段时间后，跳棋程序就学到了什么是好的布局、什么是不好的布局，最终程序学会了玩跳棋，并比Samuel玩得好，因为比起人，计算机更有耐心来对弈这么多局，获得丰富的跳棋经验）</div></p>
+<a id="more"></a>
+<p>2.一个更新的定义，由TomMitchell提出：计算机程序从经验E中学习解决某一任务T进行某一性能度量指标P,通过P测定在T上面的表现因经验E而提高。</p>
+<p><div align="center"><img src="2.jpg" alt><br>（对于跳棋游戏而言，经验E就是程序与自己下几万次跳棋，任务T就是下跳棋，性能度量P就是与新对手玩跳棋时赢得概率）</div></p>
+<p><div align="center"><img src="0.jpg" alt></div></p>
+<center>一个检测你之前有没有学懂得问题</center>
+
+<p>我们将学到各种不同类型得学习算法，最主要得两类是监督学习和无监督学习。其他有：强化学习、推荐系统<br>简单而言，监督学习就是我们会教计算机做某件事情，而在无监督学习中，我们让计算机自己学习。强化学习和推荐系统我们以后会说。</p>
+
+      
+    </div>
+    
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2019/07/04/2019.7.4梁老师组会笔记/" class="archive-article-date">
-      <time datetime="2019-07-04T03:02:20.000Z" itemprop="datePublished">07-04</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/04/2019.7.4梁老师组会笔记/">2019.7.4梁老师组会笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/组会笔记/">组会笔记</a></li></ul>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/08/13/吴恩达机器学习笔记-一/">吴恩达机器学习笔记(一)</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">toprocker</a></p>
+        <p><span>发布时间:</span>2019-08-13, 15:25:59</p>
+        <p><span>最后更新:</span>2019-08-13, 15:47:15</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/08/13/吴恩达机器学习笔记-一/" title="吴恩达机器学习笔记(一)">http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/08/13/吴恩达机器学习笔记-一/　　作者: toprocker" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2019/08/13/post-name/">
+                    
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/08/12/我的第二篇博客：新航威武/">
+                    我的第二篇博客：新航威武
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是机器学习？"><span class="toc-number">1.</span> <span class="toc-text">什么是机器学习？</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"吴恩达机器学习笔记(一)　| toprocker　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2019/08/13/post-name/" title="上一篇: ">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2019/08/12/我的第二篇博客：新航威武/" title="下一篇: 我的第二篇博客：新航威武">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/13/post-name/">post-name</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/13/吴恩达机器学习笔记-一/">吴恩达机器学习笔记(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/我的第二篇博客：新航威武/">我的第二篇博客：新航威武</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/我的第一篇博客：宗廉牛逼/">我的第一篇博客：宗廉牛逼</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/13/视频异常检测综述/">视频异常检测（VAD）综述(译)</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/04/2019.7.4梁老师组会笔记/">2019.7.4梁老师组会笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/31/2019.5.31梁老师组会笔记/">2019.5.31梁老师组会笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/07/linux配置pytorch/">linux配置pytorch</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
