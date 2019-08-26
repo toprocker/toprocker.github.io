@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>序列建模：循环和递归网络</title>
+      <link href="/2019/08/24/%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1%EF%BC%9A%E5%BE%AA%E7%8E%AF%E5%92%8C%E9%80%92%E5%BD%92%E7%BD%91%E7%BB%9C/"/>
+      <url>/2019/08/24/%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1%EF%BC%9A%E5%BE%AA%E7%8E%AF%E5%92%8C%E9%80%92%E5%BD%92%E7%BD%91%E7%BB%9C/</url>
+      
+        <content type="html"><![CDATA[<p>循环神经网络（recurrent neural network）简称RNN(Rumelhart et al., 1986c)，就像卷积神经网络专门用于处理网格化数据X(如一个图像)，循环神经网络是专门用于处理序列｛｝</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> DL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>吴恩达机器学习笔记(一)</title>
       <link href="/2019/08/13/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/"/>
       <url>/2019/08/13/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/</url>
